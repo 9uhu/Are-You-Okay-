@@ -1,0 +1,283 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'globalFont';
+  src: url('../assets/globalfont.ttf');
+}
+
+body {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  font-family: globalFont;
+}
+
+/* welcome page design */
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  background-image: url('../assets/bgimg.jpg');
+  background-repeat: no-repeate;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcomeBtn {
+  position: fixed;
+  text-align: center;
+  bottom: 10vh;
+  font-size: 25px;
+}
+
+/* profile design */
+
+#profile {
+  display: none;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#title h2 {
+  position: fixed;
+  top: 15%;
+  color: #ffca23;
+}
+
+.userInp {
+  display: flex;
+  justify-content: center;
+  transform: translateY(13rem);
+}
+.inpWrapper div {
+  padding: 20px;
+}
+
+.userInp input {
+  font-family: globalFont;
+  color: black;
+  border: 0px;
+  padding: 12px 10px;
+  transform: translateY(-7px);
+  text-align: left;
+  font-size: 25px;
+}
+.userInp p {
+  font-size: 30px;
+  transform: translateY(5px);
+}
+
+#ageBox {
+  margin-left: 70px;
+}
+
+#nameBox {
+  margin-left: 35px;
+}
+
+#countryBox {
+  margin-right: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+}
+
+.btn {
+  margin: 40px;
+  color: #ffca23;
+  border: 5px solid #ffca23;
+  padding: 10px;
+}
+
+#next:hover {
+  cursor: pointer;
+  color: white;
+  border-color: white;
+}
+
+/* mission section */
+
+#hamiltonInfo {
+  display: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #ffca23;
+}
+
+#missions {
+  font-size: 30px;
+  position: fixed;
+  top: 60px;
+}
+
+.missionsText {
+  display: grid;
+  justify-content: center;
+  transform: translateY(200px);
+}
+
+.missionsText p {
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.bordered {
+  border: 2px solid #ffca23;
+  opacity: 1;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+}
+
+.select p {
+  position: fixed;
+  bottom: 25%;
+  font-size: 25px;
+  border: 2px solid #ffca23;
+  padding: 10px;
+  color: #ffca23;
+}
+
+/* questions section */
+
+#questions {
+  display: none;
+}
+
+.question-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.questionLable {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked + label {
+  background-color: #ffca23;
+  border: 2px solid #ffca23;
+  color: black;
+}
+
+#questionForm {
+  margin-top: 30px;
+}
+
+.questionBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#arrows {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+#arrow {
+  width: 60px;
+  /* position: fixed; */
+  /* top: 40px; */
+}
+#leftarrow {
+  width: 60px;
+}
+
+/* #welcome,
+#profile {
+  display: none;
+}
+#questions {
+  display: block;
+} */
+
+/* score page */
+#scorepage {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+#result {
+  position: fixed;
+  top: 70px;
+  color: #ffca23;
+  width: 100vw;
+}
+
+#score {
+  position: fixed;
+  top: 300px;
+  width: 100vw;
+}
+
+#message {
+  position: fixed;
+  top: 350px;
+  width: 100vw;
+}
+
+#nextlevel {
+  position: fixed;
+  bottom: 80px;
+  left: 42vw;
+  font-size: 30px;
+  /* width: 100vw; */
+}
+
+#chart {
+  height: 100%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* #welcome,
+#profile,
+#questions {
+  display: none;
+} */
+
+#usrRes h2 {
+  padding: 30px;
+}
