@@ -2,7 +2,6 @@ import questionList from './data_modal.js';
 import montList from './data_montgomery.js';
 import qidsList from './data_qids.js';
 
-import { readData, writeData } from './database.js';
 
 // variables
 const selectMission = document.getElementById('selectMission');
